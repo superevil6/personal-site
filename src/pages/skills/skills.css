@@ -1,0 +1,44 @@
+.skill_holder{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.skill{
+    display: flex;
+    width: 50%;
+    padding: 15px;
+    flex-flow: column wrap;
+    border-radius: 10px;
+    transition: background-color 0.5s;
+}
+.skill:hover{
+    background-color: #555555;
+}
+.skill_bar{
+    height: 50px;
+    background-color: #444444;
+    width: 100%;
+    border-radius: 10px;
+}
+.skill_bar_filling{
+    height: 30px;
+    margin: 10px;
+    background-color: #888888;
+    border-radius: 10px;
+}
+.show_summary{
+    display: inline-block;
+    text-align: left;
+}
+.hide_summary{
+    display: none;
+}
+.skillButton{
+    margin-top: 15px;
+    width: 100%;
+    color: white;
+    background-color: #000000;
+    border: 1px white solid;
+    border-radius: 10px;
+}

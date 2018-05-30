@@ -1,0 +1,47 @@
+.navBar{
+    display: flex;
+    flex-flow: row;
+    text-align: center;
+}
+
+.navBar_list{
+    display: flex;
+    width: 70%;
+    padding: 0px !important;
+}
+.navBar_button{
+    background-color: black;
+    color: white;
+    list-style: none;
+    flex-grow: 1;
+    font-weight: 700;
+    padding: 15px;
+    transition: color 0.5s;
+    transition: background-color 0.5s;
+  }
+.navBar_button a{
+    color: inherit;
+    text-decoration: none;
+}
+.navBar_button:hover{
+    background-color: white;
+    color: black;
+}
+.dropdown_inactive{
+    display: none;
+}
+.dropdown_active{
+    float: none !important;
+    display: block;
+    position: absolute;
+}
+.dropdown_active li{
+    padding: 15px;
+    background-color: #222222;
+    list-style: none;
+}
+.dropdown_active li:hover{
+    padding: 15px;
+    background-color: #aaaaaa;
+    list-style: none;
+}

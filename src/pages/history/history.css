@@ -1,0 +1,16 @@
+.history_cards{
+    display: flex;
+    flex-flow: row wrap;
+}
+.history_card{
+    padding: 25px;
+    display: flex;
+    width: 50%;
+    flex-flow: column wrap;
+    flex-grow: 1;
+    transition: background-color 1s;
+    border-radius: 10px;
+}
+.history_card:hover{
+    background-color: green;
+}

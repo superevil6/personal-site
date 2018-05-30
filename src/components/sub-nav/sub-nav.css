@@ -1,0 +1,22 @@
+.sub_nav{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    width: 100%;
+}
+.sub_nav_item{
+    font-weight: 700;
+    color: white;
+    padding: 15px;
+    display: inline-flex;
+    list-style: none;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    background-color: black;
+    transition: color 0.5s;
+    transition: background-color 0.5s;
+}
+.sub_nav_item:hover{
+    color: black;
+    background-color: white;
+}

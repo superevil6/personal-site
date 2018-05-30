@@ -1,0 +1,25 @@
+.work_history_card_background{
+    background-color: #222222;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    transition: background-color 1s;
+}
+.work_history_card_background:hover{
+    background-color: #444444;
+}
+.work_history_card{
+    display: flex;
+    width: 100%;
+    padding: 25px;
+    flex-direction: row wrap;
+
+}
+.work_history_image{
+    max-height: 150px;
+    width: 200px;
+}
+.work_history_description{
+    padding: 25px;
+}
