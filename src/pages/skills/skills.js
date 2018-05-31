@@ -15,12 +15,44 @@ class Skills extends Component {
           <h1>My Skills</h1>
           <p>Description goes here</p>
           <div className="skill_holder">
-            <Skill skillName="C#" width="70%" summaryItems={ {items : [{"summary" : "Using the Unity editor I've created several games."}, {"summary" : "Tons of experimentation and random development"}, {"summary" : "Personally, it's my favorite."}]} } />
-            <Skill skillName="PHP- Apache, NGIN-X" width="70%" summaryItems={ {items : [{"summary" : "While working at BuilderDesigns I've done a lot of PHP coding and debugging"}, {"summary" : "I've built APIs for SQL databases to be used in PHP as well as AngularJS."}]} } />
-            <Skill skillName="HTML/CSS/JS" width="70%" summaryItems={ {items : [{"summary" : "I've assisted in site buildouts"}, {"summary" : "Plenty of site additions and corrections"}, {"summary" : "Well, I built this site."}]} } />
-            <Skill skillName="Angular 1.x" width="70%" summaryItems={ {items : [{"summary" : "I've built/debugged many sites and pages using this one. I like it."}]} } />
-            <Skill skillName="ReactJS" width="70%" summaryItems={ {items : [{"summary" : "Well, this site is made in ReactJS for one."}, {"summary" : "I've taken several courses online including CodeAcademy.com's"}, {"summary" : "BuilderDesigns uses it."}]} } />
-            <Skill skillName="*nix administration" width="70%" summaryItems={ {items : [{"summary" : "boogers"}]} } />
+            <Skill skillName="C#" width="80%" summaryItems={ 
+              {items : [
+                {"summary" : "Using the Unity editor I've created several games."}, 
+                {"summary" : "Tons of experimentation and random development"}, 
+                {"summary" : "Personally, it's my favorite."}
+                ]} } />
+            <Skill skillName="PHP: Apache, NGIN-X" width="50%" summaryItems={ 
+              {items : [
+                {"summary" : "While working at BuilderDesigns I've done a lot of PHP coding and debugging"}, 
+                {"summary" : "I've built APIs for SQL databases to be used in PHP as well as AngularJS."}
+                ]} } />
+            <Skill skillName="SQL" width="50%" summaryItems={ 
+              {items : [
+                {"summary" : "While working at BuilderDesigns I've done a lot of PHP coding and debugging"}, 
+                {"summary" : "I've built APIs for SQL databases to be used in PHP as well as AngularJS."}
+                ]} } />
+            <Skill skillName="HTML/CSS/JS" width="80%" summaryItems={ 
+              {items : [
+                {"summary" : "I've assisted in site buildouts"}, 
+                {"summary" : "Plenty of site additions and corrections"}, {"summary" : "Well, I built this site."}
+                ]} } />
+            <Skill skillName="Angular 1.x" width="70%" summaryItems={ 
+              {items : [
+                {"summary" : "I've built/debugged many sites and pages using this one. I like it."}
+                ]} } />
+            <Skill skillName="ReactJS" width="70%" summaryItems={ 
+              {items : [
+                {"summary" : "Well, this site is made in ReactJS for one."}, 
+                {"summary" : "I've taken several courses online including CodeAcademy.com's"}, 
+                {"summary" : "BuilderDesigns uses it."}]} } />
+            <Skill skillName="*nix administration" width="50%" summaryItems={ 
+              {items : [
+                {"summary" : "I do a lot of maintainence stuff, including site migrations (RSync-y stuff)."},
+                {"summary" : "I have experience installing and utilizing CLIs and other servies."},
+                {"summary" : "I can use Vim, that's an accomplishment. Oh oh, and set up Chrontabs."},
+                {"summary" : "It doesn't count for much, but I've installed many SSL certificates through Certbot"}
+
+                ]} } />
           </div>
         </div>
     );

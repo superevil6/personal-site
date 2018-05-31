@@ -10,11 +10,11 @@ class Workcard extends Component {
     render() {
       return (
           <div className="work_history_card_background">
-            <h2>{this.props.title}</h2>
-            <h3>{this.props.date}</h3>
+            <img className="work_history_image" src={this.props.image} />
             <div  className="work_history_card"> 
-                <img className="work_history_image" src={this.props.image} />
-                <div className="work_history_description">{this.props.description}</div>
+              <h2>{this.props.title}</h2>
+              <h3>{this.props.date}</h3>
+              <div className="work_history_description">{this.props.description}</div>
             </div>
           </div>
       );

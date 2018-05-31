@@ -23,17 +23,19 @@ class History extends Component {
   render() {
     return (
         <div id="history" className="container text-center">
-          <SubNav items={ {items : [{"name" : "My History", "link" : "#history"}, {"name" : "Hobbies", "link" : "#hobbies"}, {"name" : "Goals", "link" : "#goals"}]} } />
           <h1>The History of my Life</h1>
-              <p>Content goes here</p>
-              <div className="history_cards">
-                {this.state.events.map(event =>
-                  <div className="history_card">
-                    <h3>{event.title}</h3>
-                    <div>{event.description}</div>
-                  </div>
-                )} 
-              </div>
+          <SubNav items={ {items : [{"name" : "My History", "link" : "#history"}, {"name" : "Hobbies", "link" : "#hobbies"}, {"name" : "Goals", "link" : "#goals"}]} } />
+
+              <h2 id="history">My History</h2>
+              <List width={ "45" } list={
+                  {items : [
+                  {"title" : "Growing Up", "description" : "I was born in Olathe Kansas, but my family moved to Denver Colorado shortly after that. The first ten years of my life we grew up in a nice Suburb called Arvada. We moved back to Kansas when I was 10, and lived in a small town with the population of 800."},
+                  {"title" : "College", "description" : "Since I lived in Kansas, I decided to go to the University of Kansas. I ended up in the College of Liberal Arts and Sciences. I ended up studying Japanese, and eventually did a year long study abroad in Japan."},
+                  {"title" : "Living Abroad", "description" : "I had a great time in Japan, so when I returned to America to finish up college, I decided to apply for an English teaching job, and was hired. I spent the next four years living in Japan. Eventually I moved in with my fiance, and taught myself C# so I could program indie games."},
+                  {"title" : "Returning to the US", "description" : "I came back to visit my family, and while I was visiting, I was offered a job. So I moved back to start a career in programming."},
+
+                ]}
+              } />
               <h2 id="hobbies">Hobbies</h2>
               <List width={ "30" } list={
                 {items : [

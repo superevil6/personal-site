@@ -1,5 +1,8 @@
 .work_history_card_background{
+    display: flex;
+    flex-direction: row;
     background-color: #222222;
+    align-items: center;
     border-radius: 10px;
     padding: 20px;
     margin-top: 25px;
@@ -10,16 +13,20 @@
     background-color: #444444;
 }
 .work_history_card{
-    display: flex;
+
     width: 100%;
     padding: 25px;
-    flex-direction: row wrap;
+    flex-wrap: nowrap;
 
 }
 .work_history_image{
+    display: flex;
     max-height: 150px;
     width: 200px;
+    justify-content: center;
 }
 .work_history_description{
+    display: flex;
+    flex-grow: 1;
     padding: 25px;
 }

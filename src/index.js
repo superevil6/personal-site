@@ -10,7 +10,7 @@ import {
 import './index.css';
 import App from './App';
 import Home from './pages/home/home.js';
-import Navbar from './components/nav-bar/nav-bar.js';
+import Navbar2 from './components/nav-bar/navbar2.js';
 import Footer from './components/footer/footer.js';
 import History from './pages/history/history.js';
 import Skills from './pages/skills/skills.js';
@@ -21,10 +21,24 @@ import Work from './pages/work/work.js';
 
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<Router> 
+ReactDOM.render(<Router>
     <div className="body">
-        <Navbar />
-        <Route path="/home" component={Home} />
+        <Navbar2 navItems={
+            [
+              {"title":"Home", "link" : "home", "icon" : "home"},
+              {"title":"Who I Am", "link" : "history", "icon" : "user"},
+              {"title":"What I Do", "link" : "skills", "icon" : "laptop"},
+              {"title":"Games", "link" : "#" , "icon" : "gamepad",
+              subMenu : [
+                {"title" : "DoorSquare", "link" : "doorsquare"},
+                {"title" : "Aintaword", "link" : "aintaword"},
+                {"title" : "Dichotiball", "link" : "dichotiball"}
+              ]
+            },
+              {"title":"Work History", "link" : "work" , "icon" : "history"},
+              {"title":"Contact Me", "link" : "contact" , "icon" : "phone"}
+            ]
+          } />
         <Route path="/history" component={History} />
         <Route path="/skills" component={Skills} />
         <Route path="/aintaword" component={Aintaword} />

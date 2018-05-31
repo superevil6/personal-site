@@ -12,6 +12,9 @@
     border-radius: 10px;
     transition: background-color 0.5s;
 }
+.skill ul{
+    margin: 15px;
+}
 .skill:hover{
     background-color: #555555;
 }

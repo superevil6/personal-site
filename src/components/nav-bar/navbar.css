@@ -1,0 +1,53 @@
+.navbar{
+  position: fixed;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  height: auto;
+
+}
+.navbar_item{
+  display: inline-block;
+  flex-grow: 1;
+  justify-content: center;
+  padding: 15px;
+  flex-grow: 1;
+  background-color: #000000;
+  color: #FFFFFF;
+  transition: background-color 1s;
+  transition: color 1s;
+
+}
+.navbar_item i{
+  padding-right: 10px;
+}
+.navbar_item:hover{
+  background-color: #FFFFFF;
+  color: #000000;
+}
+.subnav_hidden{
+  display: none;
+}
+.subnav_show{
+  background-color: black;
+  display: flex;
+  position: absolute;
+  text-decoration: none;
+}
+.subnav_show ul{
+  padding-left: 0;
+}
+.subnav_show ul li{
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  list-style: none;
+  color: white;
+  transition: background-color 1s;
+  transition: color 1s;
+}
+.subnav_show ul li:hover{
+  background-color: white;
+  color: black;
+}
