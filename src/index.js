@@ -18,6 +18,11 @@ import Aintaword from './pages/games/aintaword.js';
 import Dichotiball from './pages/games/dichotiball.js';
 import Doorsquare from './pages/games/doorsquare.js';
 import Work from './pages/work/work.js';
+import Contact from './pages/contact/contact.js';
+import Blog from './components/blog/blog.js';
+
+//images
+
 
 import registerServiceWorker from './registerServiceWorker';
 
@@ -39,12 +44,19 @@ ReactDOM.render(<Router>
               {"title":"Contact Me", "link" : "contact" , "icon" : "phone"}
             ]
           } />
-        <Route path="/history" component={History} />
-        <Route path="/skills" component={Skills} />
-        <Route path="/aintaword" component={Aintaword} />
-        <Route path="/dichotiball" component={Dichotiball} />
-        <Route path="/doorsquare" component={Doorsquare} />
-        <Route path="/work" component={Work} />
+          <div className="subBody">
+            <Route path="/home" component={Home} />
+            <Route path="/history" component={History} />
+            <Route path="/skills" component={Skills} />
+            <Route path="/aintaword" component={Aintaword} />
+            <Route path="/dichotiball" component={Dichotiball} />
+            <Route path="/doorsquare" component={Doorsquare} />
+            <Route path="/work" component={Work} />
+            <Route path="/contact" component={Contact} />
+
+            
+          </div>
+        
         <Footer />
 
     </div>

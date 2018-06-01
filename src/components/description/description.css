@@ -1,0 +1,17 @@
+.description{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.description_content{
+    display: flex;
+}
+.feature_list{
+
+}
+.feature{
+
+}
+.screenshots{
+
+}

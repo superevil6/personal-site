@@ -13,7 +13,7 @@ class Skills extends Component {
     return (
         <div className="container text-center">
           <h1>My Skills</h1>
-          <p>Description goes here</p>
+          <p>Mostly related to programming.</p>
           <div className="skill_holder">
             <Skill skillName="C#" width="80%" summaryItems={ 
               {items : [
@@ -53,6 +53,15 @@ class Skills extends Component {
                 {"summary" : "It doesn't count for much, but I've installed many SSL certificates through Certbot"}
 
                 ]} } />
+            <Skill skillName="Python Eve / Mongo" width="40%" summaryItems={ 
+              {items : [
+                {"summary" : "I can search, modify, add, and edit documents pretty handily."}, 
+                ]} } />
+            <Skill skillName="Japanese" width="80%" summaryItems={ 
+              {items : [
+                {"summary" : "I can speak, listen, read, and write at business level (I've studied JLPT N1 content for years). Not related to programming, but worth mentioning"}, 
+                ]} } />
+                
           </div>
         </div>
     );

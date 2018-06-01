@@ -39,12 +39,12 @@ class History extends Component {
               <h2 id="hobbies">Hobbies</h2>
               <List width={ "30" } list={
                 {items : [
-                {"title" : "Guitar", "description" : "I like to play the guiatar", "icon" : "music"},
-                {"title" : "Video Games", "description" : "I beat Sonic the Hedgehog 2 when I was 3.", "icon" : "gamepad"},
-                {"title" : "Art", "description" : "I absolutely love drawing, and animation as well. I used to make Flash cartoons.", "icon" : "paint-brush"},
-                {"title" : "Movies", "description" : "I watch as many films as I can. I love great movies, and I love terrible movies. That being said, I'm not too big a fan of modern movies, they seem too cash grabby.", "icon" : "film"},
-                {"title" : "Programming", "description" : "I like doing it, which is good because it's my job.", "icon" : "code"},
-                {"title" : "Studying", "description" : "No, really. I love learning new things. Right now this mostly involves studying Programing and Japanese.", "icon" : "book"},
+                {"title" : "Guitar", "description" : "I like to play the guiatar", "icon" : "fa fa-music"},
+                {"title" : "Video Games", "description" : "I beat Sonic the Hedgehog 2 when I was 3.", "icon" : "fa fa-gamepad"},
+                {"title" : "Art", "description" : "I absolutely love drawing, and animation as well. I used to make Flash cartoons.", "icon" : "fa fa-paint-brush"},
+                {"title" : "Movies", "description" : "I watch as many films as I can. I love great movies, and I love terrible movies. That being said, I'm not too big a fan of modern movies, they seem too cash grabby.", "icon" : "fa fa-film"},
+                {"title" : "Programming", "description" : "I like doing it, which is good because it's my job.", "icon" : "fa fa-code"},
+                {"title" : "Studying", "description" : "No, really. I love learning new things. Right now this mostly involves studying Programing and Japanese.", "icon" : "fa fa-book"},
 
                 ]}
               } />
