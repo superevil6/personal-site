@@ -13,25 +13,37 @@ class Description extends Component {
     return (
         <div className="description text-center">
             <div className="description_content">
-                <iframe src={this.props.videoembed}></iframe>
+            {this.props.videoembed? 
+                <iframe src={this.props.videoembed} width="800px" height="350px" ></iframe> :
+                null
+                 }
                 <h2>{this.props.tagline}</h2>
                 <p>{this.props.description}</p>
                 <div className="feature_list">
                     <ul>
                         {this.props.features.map(feature =>
                         <div className="feature">
-                            <h3>{feature.title}</h3>
+                            <h5>{feature.title}</h5>
+                            {feature.image?
                             <img src={feature.image} />
+                            :
+                            null
+
+                        }
                             <p>{feature.description}</p>
                         </div>    
                         )}
                     </ul>
                 </div>
-                <div className="screenshots">
-                    {this.props.images.map(image =>
+                {this.props.images?
+                    <div className="screenshots">
+                        {this.props.images.map(image =>
                         <img src={image.source} />
-                    )}
-                </div>
+                        )}
+                    </div> :
+                    null
+                }
+
             </div>
 
 

@@ -1,19 +1,23 @@
 .blog_post{
+    margin: 15px;
     display: flex;
     flex-flow: column;
     align-items: center;
     width: 100%;
 }
 .content{
-    width: 80%;
+    width: 90%;
     background-color: black;
     border-radius: 25px;
 
 }
-.content h2{
-    padding: 25px;
+.content h6{
+    padding: 10px;
 }
-.content h3{
+.content h2{
+    padding: 15px;
+}
+.content h5{
     font-size: 18px;
     width: 100%;
     padding-bottom: 10px;

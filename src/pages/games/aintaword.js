@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './games.css';
+import Description from '../../components/description/description.js';
+
 
 class Aintaword extends Component {
   constructor(props) {
@@ -11,9 +13,22 @@ class Aintaword extends Component {
  
   render() {
     return (
-        <div className="container text-center">
-          <h1>Aintaword</h1>
-        </div>
+      <div className="container text-center">
+      <h1>Aintaword</h1>
+      <Description 
+      tagline="A gaem of wrod recogintion"
+      description="Is it a word, or not? Quick fire word recognition designed to twist your brain with twisted words."
+      features={
+        [
+          {"title" : "Addictive 'One more time' gameplay", "description" : "Quick matches, requiring split second decisions. Build up chains and score high!"},
+          {"title" : "Hundreds of Levels", "description" : "With ten worlds, all featuring unique fonts, and graphics, and gameplay mods"},
+          {"title" : "Adventure Story Mode", "description" : "Becuase word games require a deep emotional story."},
+          {"title" : "Educational uses", "description" : "Grab the Spanish word pack, and make use of your time."},
+          {"title" : "Multiplayer modes!", "description" : "Head-to-head score battle, mayhem with power battle mode. Twist your opponents words and raise the challenge. Try coop mode in case you don't want to end your friendships."},
+
+        ]
+          }  />
+    </div>
     );
   }
 }

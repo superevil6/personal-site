@@ -2,15 +2,39 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    background-color: #111111;
+    border-radius: 25px;
 }
 .description_content{
-    display: flex;
+
+}
+.description_content h2{
+    padding: 15px;
+}
+.description_content p{
+    padding: 15px;
+}
+.description_content iframe{
+    margin: 25px;
+    
 }
 .feature_list{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 15px;
 
 }
 .feature{
-
+    width: 30%;
+    display: inline-flex;
+    flex-flow: column wrap;
+    background-color: #000000;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 15px;
 }
 .screenshots{
 
