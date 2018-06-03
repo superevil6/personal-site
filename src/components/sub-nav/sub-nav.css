@@ -4,6 +4,9 @@
     justify-content: center;
     width: 100%;
 }
+.sub_nav ul{
+    padding-left: 0px;
+}
 .sub_nav_item{
     font-weight: 700;
     color: white;
@@ -19,4 +22,7 @@
 .sub_nav_item:hover{
     color: black;
     background-color: white;
+}
+.navbar_item{
+    
 }

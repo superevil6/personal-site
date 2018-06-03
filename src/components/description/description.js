@@ -14,7 +14,7 @@ class Description extends Component {
         <div className="description text-center">
             <div className="description_content">
             {this.props.videoembed? 
-                <iframe src={this.props.videoembed} width="800px" height="350px" ></iframe> :
+                <iframe src={this.props.videoembed} frameBorder="0" width="800px" height="350px" ></iframe> :
                 null
                  }
                 <h2>{this.props.tagline}</h2>

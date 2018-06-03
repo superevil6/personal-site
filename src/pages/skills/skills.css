@@ -45,3 +45,14 @@
     border: 1px white solid;
     border-radius: 10px;
 }
+@media only screen and (max-width: 600px) {
+    .skill{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .skill:nth-child(odd){
+        background-color: #222222;
+        width: 100%;
+        margin-bottom: 25px;
+    }
+}

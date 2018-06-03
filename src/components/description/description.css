@@ -6,9 +6,6 @@
     background-color: #111111;
     border-radius: 25px;
 }
-.description_content{
-
-}
 .description_content h2{
     padding: 15px;
 }
@@ -36,6 +33,17 @@
     padding: 15px;
     margin: 15px;
 }
-.screenshots{
-
+.feature_list ul{
+    padding-left: 0px;
+}
+@media only screen and (max-width: 600px) {
+    .feature{
+        width: 90%;
+    }
+    .description_content iframe{
+        width: 90%;
+        height: 250px;
+        margin: 25px;
+        
+    }
 }

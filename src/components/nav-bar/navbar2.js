@@ -13,7 +13,6 @@ class Navbar2 extends Component {
   }
   toggleSubNav = () =>{
     this.setState({showSubNav : !this.state.showSubNav});
-    console.log(this.state.showSubNav);
   }
   render() {
     return (

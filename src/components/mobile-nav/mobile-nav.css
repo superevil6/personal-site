@@ -1,0 +1,54 @@
+.nav{
+    display: flex;
+    position: fixed;
+    width: 45%;
+    background-color: black;
+}
+.nav_button{
+    display: block;
+    align-items: center;
+    flex-flow: row;
+    padding: 15px;
+}
+.nav_button span{
+    margin-left: 15px;
+}
+.menu_show{
+    width: 100%;
+    height: auto;
+    display: inline-flex;
+}
+.menu_show ul{
+    padding-left: 0px;
+}
+.menu_hide{
+    display: none;
+}
+.subnav_show ul{
+    padding-left: 0px;
+    display: inline-flex;
+}
+.nav_item{
+    display: inline-block;
+    flex-grow: 1;
+    justify-content: center;
+    padding: 15px;
+    flex-grow: 1;
+    background-color: #000000;
+    color: #FFFFFF;
+  }
+.nav_item span{
+    margin-left: 25px;
+}
+.subnav_show{
+    display: flex;
+    flex-flow: column;
+}
+.subnav_hidden{
+    display: none;
+}
+@media only screen and (min-width: 600px) {
+    .nav{
+        display: none;
+    }
+}
