@@ -25,7 +25,8 @@ import Contact from './pages/contact/contact.js';
 
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<Router>
+ReactDOM.render(
+<Router>
     <div className="body">
         <Navbar2 navItems={
             [
@@ -60,6 +61,7 @@ ReactDOM.render(<Router>
             ]
           } />
           <div className="subBody">
+            <Redirect to="/home" />
             <Route path="/home" component={Home} />
             <Route path="/history" component={History} />
             <Route path="/skills" component={Skills} />
