@@ -1,29 +1,13 @@
 const express = require('express');
+const router = express.Router();
 const app = express();
+const mongoose = require('mongoose');
 
-app.listen(3000, function() {
-    console.log('derping on 3000')
-  })
+mongoose.connect('mongodb://204.48.30.5:270127/');
 
-  app.get('/', (req, res) => {
-    res.send('gurl')
-  })
+var db = mongoose.connection;
 
-var db;
-
-var MongoClient = require('mongodb').MongoClient;
-
-var URL = 'mongodb://204.48.30.5:27017/';
-
-MongoClient.connect(URL, function(err, db) {
-    console.log(err);
-  if (err) return
-
-  var collection = db.collection('blog')
-  collection.insert({name: 'taco', tasty: true}, function(err, result) {
-    collection.find({name: 'taco'}).toArray(function(err, docs) {
-      console.log(docs[0])
-      db.close()
-    })
-  })
-})
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', function() {
+    console.log("hi");
+});

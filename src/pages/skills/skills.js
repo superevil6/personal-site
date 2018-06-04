@@ -24,17 +24,20 @@ class Skills extends Component {
             <Skill skillName="PHP: Apache, NGIN-X" width="50%" summaryItems={ 
               {items : [
                 {"summary" : "While working at BuilderDesigns I've done a lot of PHP coding and debugging"}, 
-                {"summary" : "I've built APIs for SQL databases to be used in PHP as well as AngularJS."}
+                {"summary" : "I've built APIs for SQL databases to be used in PHP as well as AngularJS."},
+                {"summary" : "Writting lots of back-end logic and tons of debugging."},
+                {"summary" : "No PHP, but I use Nginx to serve this website."},
                 ]} } />
             <Skill skillName="SQL" width="50%" summaryItems={ 
               {items : [
-                {"summary" : "While working at BuilderDesigns I've done a lot of PHP coding and debugging"}, 
-                {"summary" : "I've built APIs for SQL databases to be used in PHP as well as AngularJS."}
+                {"summary" : "Experience with creating databases, tables, rows, and properities."}, 
+                {"summary" : "Worked a lot of tables into APIs for use on sites."}
                 ]} } />
             <Skill skillName="HTML/CSS/JS" width="80%" summaryItems={ 
               {items : [
                 {"summary" : "I've assisted in site buildouts"}, 
-                {"summary" : "Plenty of site additions and corrections"}, {"summary" : "Well, I built this site."}
+                {"summary" : "Plenty of site additions and corrections"}, 
+                {"summary" : "Well, I built this site."}
                 ]} } />
             <Skill skillName="Angular 1.x" width="70%" summaryItems={ 
               {items : [
@@ -45,7 +48,7 @@ class Skills extends Component {
                 {"summary" : "Well, this site is made in ReactJS for one."}, 
                 {"summary" : "I've taken several courses online including CodeAcademy.com's"}, 
                 {"summary" : "BuilderDesigns uses it."}]} } />
-            <Skill skillName="*nix administration" width="50%" summaryItems={ 
+            <Skill skillName="*nix administration - Ubuntu / Centos" width="50%" summaryItems={ 
               {items : [
                 {"summary" : "I do a lot of maintainence stuff, including site migrations (RSync-y stuff)."},
                 {"summary" : "I have experience installing and utilizing CLIs and other servies."},
@@ -55,7 +58,7 @@ class Skills extends Component {
                 ]} } />
             <Skill skillName="Python Eve / Mongo" width="40%" summaryItems={ 
               {items : [
-                {"summary" : "I can search, modify, add, and edit documents pretty handily."}, 
+                {"summary" : "I can search, modify, add, and edit documents pretty handily."},
                 ]} } />
             <Skill skillName="Japanese" width="80%" summaryItems={ 
               {items : [
@@ -82,7 +85,6 @@ class Skill extends Component{
   }
   toggleShow = () =>{
     const newState = this.state.viewMore;
-    console.log("Hi");
     this.setState( { "viewMore" : !newState } );
   }
 

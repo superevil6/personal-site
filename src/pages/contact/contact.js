@@ -25,7 +25,7 @@ class Contact extends Component {
                 {items : [
                 {"title" : "Github", "link" : "https://www.github.com/superevil6", "hyperlink" : "Github/superevil6", "description" : "Check out my projects", "icon" : "fab fa-github"},
                 {"title" : "Steam", "description" : "Play games with me!", "link" : "https://steamcommunity.com/id/superevil6", "hyperlink" : "superevil6", "icon" : "fab fa-steam"},
-                {"title" : "Linked In", "description" : "I don't actually have one. I'll make it eventually", "icon" : "fab fa-linkedin"},
+                {"title" : "Linked In", "description" : "It's a new account, have mercy.", "link" : "www.linkedin.com/in/alex-cassells", "hyperlink" : "Link with me", "icon" : "fab fa-linkedin"},
                 {"title" : "Appstore", "description" : "There's only one game on there. I need to renew the dev subscription.", "icon" : "fab fa-app-store-ios"},
                 {"title" : "Google Play", "description" : "Yep, only DoorSquare. I hope to change that soon.", "link" : "https://play.google.com/store/apps/developer?id=Alex+Cassells", "hyperlink" : "Alex Cassells", "icon" : "fab fa-google-play"},
 
