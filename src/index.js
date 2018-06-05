@@ -24,6 +24,7 @@ import Contact from './pages/contact/contact.js';
 
 
 import registerServiceWorker from './registerServiceWorker';
+import { unregister } from './registerServiceWorker';
 
 ReactDOM.render(
 <Router>
@@ -78,4 +79,5 @@ ReactDOM.render(
 
     </div>
 </Router>, document.getElementById('root'));
-registerServiceWorker();
+// registerServiceWorker();
+unregister();
