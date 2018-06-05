@@ -1,8 +1,7 @@
 {
   "name": "personal-site",
   "version": "0.1.0",
-  "private": true,
-  "homepage": "/home",
+  "private": false,
   "dependencies": {
     "ajv-keywords": "^3.2.0",
     "express": "^4.16.3",
