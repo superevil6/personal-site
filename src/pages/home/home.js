@@ -5,6 +5,8 @@ import Blog from '../../components/blog/blog.js';
 import blackboard from '../../components/blog/images/blackboard.jpg';
 import irishcarbomb from '../../components/blog/images/irishcarbomb.jpg';
 import satansred from '../../components/blog/images/satansred.jpg';
+import threeliter from '../../components/blog/images/threeliter.jpg';
+
 
 
 import './home.css';
@@ -22,6 +24,13 @@ class Home extends Component {
         <div className="container text-center">
           <h1>Alex Cassells</h1>
           <p>Welcome to my site, here is some information about me and what I do.</p>
+          <hr/> 
+          <h2>Updates and News</h2>
+          <Blog title="Steady updates" 
+          date="June 5th 2018" 
+          imageDescription="A three liter of beer. It was a great night."
+          photo={threeliter} 
+          content="Just making steady progress on the site. Next I'm going to finish adding in a connection to the MongoDB. Yay." />
           <Blog title="Site Launch" 
           date="June 3rd 2018" 
           imageDescription="A beer I drank on game night in Mito one time. Good stuff. Cheers to the site launch."

@@ -48,8 +48,9 @@ class Skills extends Component {
                 {"summary" : "Well, this site is made in ReactJS for one."}, 
                 {"summary" : "I've taken several courses online including CodeAcademy.com's"}, 
                 {"summary" : "BuilderDesigns uses it."}]} } />
-            <Skill skillName="*nix administration - Ubuntu / Centos" width="50%" summaryItems={ 
+            <Skill skillName="*nix administration" width="50%" summaryItems={ 
               {items : [
+                {"summary" : "I've ran Ubuntu and CentOS servers. Servers man, no GUI."},
                 {"summary" : "I do a lot of maintainence stuff, including site migrations (RSync-y stuff)."},
                 {"summary" : "I have experience installing and utilizing CLIs and other servies."},
                 {"summary" : "I can use Vim, that's an accomplishment. Oh oh, and set up Chrontabs."},

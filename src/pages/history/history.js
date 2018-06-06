@@ -6,6 +6,7 @@ import courthouse from './images/courthouse.jpg';
 import campus from './images/campus.jpg';
 import sunset from './images/sunset.jpg';
 import tajiri from './images/tajiri.jpg';
+import pencil from './images/pencil.jpg';
 
 
 
@@ -23,15 +24,37 @@ class History extends Component {
     return (
         <div id="history" className="container text-center">
           <h1>The History of my Life</h1>
+          <List width={90} list={
+            {
+              items: [
+                {"title" : "Who I am",
+                "image" : pencil,
+                "description" : "I am a 28 year old software developer who lives in Kansas. I used to live in Japan for five years, and plan on getting married to a beautiful woman soon. I love playing, and making video games. I always challenge myself to learn new hobbies/skills, and luckily programming/web development has no shortage of things to learn."}
+
+            ]}
+          }
+          />
           <SubNav items={ {items : [{"name" : "My History", "link" : "#history"}, {"name" : "Hobbies", "link" : "#hobbies"}, {"name" : "Goals", "link" : "#goals"}]} } />
 
               <h2 id="history">My History</h2>
               <List width={ "45" } list={
                   {items : [
-                  {"title" : "Growing Up", "image" : courthouse, "description" : "I was born in Olathe Kansas, but my family moved to Denver Colorado shortly after that. The first ten years of my life we grew up in a nice Suburb called Arvada. We moved back to Kansas when I was 10, and lived in a small town with the population of 800."},
-                  {"title" : "College", "image" : campus, "description" : "Since I lived in Kansas, I decided to go to the University of Kansas. I ended up in the College of Liberal Arts and Sciences. I ended up studying Japanese, and eventually did a year long study abroad in Japan."},
-                  {"title" : "Living Abroad", "image" : tajiri, "description" : "I had a great time in Japan, so when I returned to America to finish up college, I decided to apply for an English teaching job, and was hired. I spent the next four years living in Japan. Eventually I moved in with my fiance, and taught myself C# so I could program indie games."},
-                  {"title" : "Returning to the US", "image" : sunset, "description" : "I came back to visit my family, and while I was visiting, I was offered a job. So I moved back to start a career in programming."},
+                  {"title" : "Growing Up", 
+                  "image" : courthouse, 
+                  "imageDescription" : "The super old Linn County courthouse of my hometown MoundCity.",
+                  "description" : "I was born in Olathe Kansas, but my family moved to Denver Colorado shortly after that. The first ten years of my life we grew up in a nice Suburb called Arvada. We moved back to Kansas when I was 10, and lived in a small town with the population of 800."},
+                  {"title" : "College", 
+                  "image" : campus, 
+                  "imageDescription" : "University of Kansas Campus. Lotsa fun memories there.",
+                  "description" : "Since I lived in Kansas, I decided to go to the University of Kansas. I ended up in the College of Liberal Arts and Sciences. I ended up studying Japanese, and eventually did a year long study abroad in Japan."},
+                  {"title" : "Living Abroad", 
+                  "image" : tajiri, 
+                  "imageDescription" : "I taught at a school named Tajiri Elementary school. This was the view off the balcony of my classroom.",
+                  "description" : "I had a great time in Japan, so when I returned to America to finish up college, I decided to apply for an English teaching job, and was hired. I spent the next four years living in Japan. Eventually I moved in with my fiance, and taught myself C# so I could program indie games."},
+                  {"title" : "Returning to the US", 
+                  "image" : sunset,
+                  "imageDescription" : "A sunset I captured upon returning to America. It's taken at my parent's house. America has the best sunsets.", 
+                  "description" : "I came back to visit my family, and while I was visiting, I was offered a job. So I moved back to start a career in programming."},
 
                 ]}
               } />

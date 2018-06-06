@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
-import './games.css';
+import Gallery from '../../components/gallery/gallery.js';
 import Description from '../../components/description/description.js';
-import mouth from "./images/Mouth.png";
+import './games.css';
+import ds from './images/ds.jpg';
+import ds1 from './images/ds1.jpg';
+import ds2 from './images/ds2.jpg';
+import ds3 from './images/ds3.jpg';
 
 class Doorsquare extends Component {
   constructor(props) {
@@ -28,7 +32,21 @@ class Doorsquare extends Component {
 
             ]
               }  />
+          <hr/>
+          <h2>Screenshots</h2>
+          <hr/>
+          <Gallery photos={[
+            {"image" : ds,
+            "description" : "DoorSquare! Put the Square through the doors! Wow"},
+            {"image" : ds1,
+            "description" : "Great Backgrounds, and unique character!."},
+            {"image" : ds2,
+            "description" : "Mix and match game modes, thousands of combination"},
+            {"image" : ds3,
+            "description" : "Wow, tons of content. Also it's free. What a steal."},
+          ]} />
         </div>
+
     );
   }
 }

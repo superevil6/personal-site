@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import './games.css';
 import Description from '../../components/description/description.js';
-
+import Gallery from '../../components/gallery/gallery.js';
+import space from './images/space.png';
+import grass from './images/grass.png';
 
 class Dichotiball extends Component {
   constructor(props) {
@@ -27,6 +29,16 @@ class Dichotiball extends Component {
             {"title" : "Unique Characters", "description" : "Play an overgrowing amorpheous blob, or a spike ball that never slows down, a manueverable marble, an all-seeing eyeball, or a rocket propelled motor ball."}
           ]
             }  />
+          <hr/>
+          <h2>Screenshots</h2>
+          <hr/>
+          <Gallery photos={[
+            {"image" : grass,
+            "description" : "Dichotiball, grab stuff and win!"},
+            {"image" : space,
+            "description" : "Many different characters and level themes."},
+
+          ]} />
     </div>
     );
   }

@@ -21,32 +21,18 @@ class Description extends Component {
                 <p>{this.props.description}</p>
                 <div className="feature_list">
                     <ul>
-                        {this.props.features.map(feature =>
+                        {this.props.features && this.props.features.map(feature =>
                         <div className="feature">
                             <h5>{feature.title}</h5>
-                            {feature.image?
+                            {feature.image &&
                             <img src={feature.image} />
-                            :
-                            null
-
-                        }
+                            }
                             <p>{feature.description}</p>
                         </div>    
                         )}
                     </ul>
                 </div>
-                {this.props.images?
-                    <div className="screenshots">
-                        {this.props.images.map(image =>
-                        <img src={image.source} />
-                        )}
-                    </div> :
-                    null
-                }
-
             </div>
-
-
         </div>
     );
   }
