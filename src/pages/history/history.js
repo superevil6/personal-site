@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import SubNav from '../../components/sub-nav/sub-nav.js';
 import List from '../../components/list/list.js';
+import Header from '../../components/header/header.js';
 import './history.css';
 import courthouse from './images/courthouse.jpg';
 import campus from './images/campus.jpg';
@@ -23,7 +24,7 @@ class History extends Component {
   render() {
     return (
         <div id="history" className="container text-center">
-          <h1>The History of my Life</h1>
+        <Header title="The History of my life." description="Check out these various interesting historical events centered around me. Also view my hobbies and be amazed by my lofty goals." />
           <List width={90} list={
             {
               items: [

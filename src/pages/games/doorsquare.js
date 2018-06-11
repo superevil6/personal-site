@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import Header from '../../components/header/header.js';
 import Gallery from '../../components/gallery/gallery.js';
 import Description from '../../components/description/description.js';
 import './games.css';
+import DoorSquareIcon from './images/Door Square Icon.png';
 import ds from './images/ds.jpg';
 import ds1 from './images/ds1.jpg';
 import ds2 from './images/ds2.jpg';
@@ -18,7 +20,7 @@ class Doorsquare extends Component {
   render() {
     return (
         <div className="container text-center">
-          <h1>DoorSquare</h1>
+          <Header title="DoorSquare" description="The timing game of madness and doors!" ogImage={DoorSquareIcon} />
           <Description 
           tagline="A game of timing, and mayhem!"
           description="Get your door through the squares. Yep. The more doors you can get through in quick succession, the higher your score climbs. Grab power ups, play the story mode, and unlock severl hundred extra characters, obstacles, levels, and gameplay modes!"

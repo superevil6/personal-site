@@ -20,7 +20,7 @@ class MobileNav extends Component {
     return (
         <div className="nav">
             <div onClick={ ()=> this.toggleShow()} className="nav_button">
-                <i class="fas fa-bars"></i>
+                <i className="fas fa-bars"></i>
                 <span>Menu</span>
             </div>
             <div className={this.state.showMenu? "menu_show" : "menu_hide"}>

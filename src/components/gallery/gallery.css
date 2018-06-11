@@ -27,3 +27,14 @@
 .image-box{
     background-color: #222222 !important;
 }
+@media only screen and (max-width: 600px) {
+    .photo_container{
+        width: 100%;
+    }
+    .image-box{
+        width: 95%;
+    }
+    .image-box img{
+        width: 100%;
+    }
+  }

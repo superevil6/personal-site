@@ -11,6 +11,9 @@
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-fancybox": "^0.2.3",
+    "react-form": "^3.5.5",
+    "react-helmet": "^5.2.0",
+    "react-modal": "^3.4.5",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.4"
@@ -23,5 +26,6 @@
   },
   "devDependencies": {
     "nodemon": "^1.17.5"
-  }
+  },
+  "proxy": "https://204.48.30.5:27017"
 }

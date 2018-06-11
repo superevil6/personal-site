@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Blog from '../../components/blog/blog.js';
-
-
+import Header from '../../components/header/header.js';
 import blackboard from '../../components/blog/images/blackboard.jpg';
 import irishcarbomb from '../../components/blog/images/irishcarbomb.jpg';
 import satansred from '../../components/blog/images/satansred.jpg';
@@ -22,7 +21,7 @@ class Home extends Component {
   render() {
     return (
         <div className="container text-center">
-          <h1>Alex Cassells</h1>
+          <Header title="Alex Cassells" description="A portolio site that hopefully shows off that I know a thing or two about Webdev and Software engineering." />
           <p>Welcome to my site, here is some information about me and what I do.</p>
           <hr/> 
           <h2>Updates and News</h2>

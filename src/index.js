@@ -7,6 +7,7 @@ import {
     Redirect,
     withRouter
   } from "react-router-dom";
+import Helmet from 'react-helmet';
 import './index.css';
 import Home from './pages/home/home.js';
 import Navbar2 from './components/nav-bar/navbar2.js';
