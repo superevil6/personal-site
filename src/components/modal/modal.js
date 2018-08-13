@@ -13,7 +13,6 @@ const customStyles = {
       marginRight           : '-50%',
       transform             : 'translate(-50%, -50%)',
       backgroundColor       : 'black',
-      borderRadius          : '25px',
       display               : 'flex',
       flexFlow              : 'column',
     }
@@ -40,7 +39,7 @@ class SiteModal extends Component {
 
   }
 
- 
+
   render() {
     return (
         <div>

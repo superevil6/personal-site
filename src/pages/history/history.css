@@ -9,7 +9,6 @@
     flex-flow: column wrap;
     flex-grow: 1;
     transition: background-color 1s;
-    border-radius: 10px;
 }
 .history_card:hover{
     background-color: green;

@@ -18,7 +18,7 @@ const ContactForm = () => (
               <input type="text" name="firstName" placeholder='First Name' />
             </label>
             <label className="form_item">Last Name:
-              <input type="text" name="lastName" placeholder='Last Name' /> 
+              <input type="text" name="lastName" placeholder='Last Name' />
             </label>
           </div>
           <div className="form_group">
@@ -36,7 +36,7 @@ const ContactForm = () => (
           </div>
           <div className="form_group">
               <button className="submit_button" type="submit">Submit</button>
-          </div>            
+          </div>
         </div>
         {loading && <div>Loading...</div>}
         {error && <div>Something went wrong. Please try again later.</div>}
@@ -55,13 +55,13 @@ class Contact extends Component {
     };
 
   }
-  
+
   render() {
     return (
         <div className="text-center">
-            <Header 
-            title="Contact Me" 
-            description="Here are various ways to get in touch with me." 
+            <Header
+            title="Contact Me"
+            description="Here are various ways to get in touch with me."
             background={contactBackground}
             />
             <SiteModal buttonText="Contact me" title="Contact me" form={ContactForm()} />
@@ -71,7 +71,7 @@ class Contact extends Component {
             ]}
               } /> */}
               <h2>Check out these links:</h2>
-              <List width={ "40" } list={
+              <List size={ "list_item_sm" } list={
                 {items : [
                 {"title" : "Telephone", "description" : "Please fill out a contact form and I'll call you!", "title" : "Telephone", "icon" : "fa fa-phone"},
                 {"title" : "Github", "link" : "https://www.github.com/superevil6", "description" : "Check out my projects", "icon" : "fab fa-github"},

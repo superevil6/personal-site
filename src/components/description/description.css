@@ -4,7 +4,6 @@
     flex-direction: column;
     align-items: center;
     background-color: #111111;
-    border-radius: 25px;
 }
 .description_content h2{
     padding: 15px;
@@ -14,7 +13,7 @@
 }
 .description_content iframe{
     margin: 25px;
-    
+
 }
 .feature_list{
     width: 100%;
@@ -29,7 +28,6 @@
     display: inline-flex;
     flex-flow: column wrap;
     background-color: #000000;
-    border-radius: 15px;
     padding: 15px;
     margin: 15px;
 }
@@ -44,6 +42,6 @@
         width: 90%;
         height: 250px;
         margin: 25px;
-        
+
     }
 }
