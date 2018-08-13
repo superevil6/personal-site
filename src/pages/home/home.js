@@ -5,11 +5,14 @@ import blackboard from '../../components/blog/images/blackboard.jpg';
 import irishcarbomb from '../../components/blog/images/irishcarbomb.jpg';
 import satansred from '../../components/blog/images/satansred.jpg';
 import threeliter from '../../components/blog/images/threeliter.jpg';
+import haku from '../../components/blog/images/haku.jpg';
+import rings from '../../components/blog/images/rings.jpg';
+
+import homepageBackground from './sunflowers.jpg';
 
 
 
 import './home.css';
-
 class Home extends Component {
   constructor(props) {
     super(props);
@@ -20,11 +23,25 @@ class Home extends Component {
  
   render() {
     return (
-        <div className="container text-center">
-          <Header title="Alex Cassells" description="A portolio site that hopefully shows off that I know a thing or two about Webdev and Software engineering." />
+        <div className="text-center">
+          <Header 
+          title="Alex Cassells" 
+          description="A portolio site that hopefully shows off that I know a thing or two about Webdev and Software engineering." 
+          background={homepageBackground}
+          />
           <p>Welcome to my site, here is some information about me and what I do.</p>
           <hr/> 
           <h2>Updates and News</h2>
+          <Blog title="Happy 4th, happy wedding!" 
+          date="July 4th 2018" 
+          imageDescription="Her engagement ring, and the ring I received from my grandparents."
+          photo={rings} 
+          content="I got married today. We're saving the ceremony for later, but in the interest of getting Greencard paperwork finished and filed, we've decided to get hitched today." />
+          <Blog title="To the airport!" 
+          date="June 19th 2018" 
+          imageDescription="A mysterious $70 beauty product that ended up in her luguage some how. I feel bad for the person who lost it."
+          photo={haku} 
+          content="My fiance arrived in the United States! I haven't seen her in 10 months. I couldn't be any happier." />
           <Blog title="Steady updates" 
           date="June 5th 2018" 
           imageDescription="A three liter of beer. It was a great night."

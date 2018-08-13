@@ -12,29 +12,19 @@ class List extends Component {
   }
   render() {
     return (
-        <div className="list">
-                {this.props.list.items.map(item =>
-                    <div key={item.title} style={{ width : this.props.width + "%"}} className="list_item text-center">
-                        {item.icon?
-                        <i className={item.icon}></i> :
-                          null
-                        }
-                        <h3>{item.title}</h3>
-                        {item.image? 
-                          <img alt={item.imageDescription} src={item.image} /> :
-                          null
-                        }
-                        {item.imageDescription? 
-                          <span className="image_description">{item.imageDescription}</span>  : null }
-                        {item.link? 
-                          <a href={item.link}>{item.hyperlink}</a>
-                            :
-                          null
-                        }
-                        <p>{item.description}</p>
-                    </div>
-                )}
-        </div>
+      <div className="list">
+        {this.props.list.items.map(item =>
+          <a key={item.title} href={item.link} style={{ width : this.props.width + "%"}}>
+            <div  className="list_item text-center">
+              {item.icon && <i className={item.icon}></i>}
+              <h3>{item.title}</h3>
+              {item.image && <img alt={item.imageDescription} src={item.image} />}
+              {item.imageDescription && <span className="image_description">{item.imageDescription}</span>}
+              <p>{item.description}</p>
+            </div>
+          </a>
+        )}
+      </div>
     );
   }
 }

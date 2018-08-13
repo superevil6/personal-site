@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './games.css';
 import Description from '../../components/description/description.js';
+import Header from '../../components/header/header.js';
+import aintawordBackground from './aintawordBackground.png';
 
 
 class Aintaword extends Component {
@@ -13,8 +15,12 @@ class Aintaword extends Component {
  
   render() {
     return (
-      <div className="container text-center">
-      <h1>Aintaword</h1>
+      <div className="text-center">
+        <Header 
+          title="Aintaword" 
+          description="A word recognition game that tests your reading comprehension and speed. It's more fun than it sounds, honestly."
+          background= {aintawordBackground}
+        />
       <Description 
       tagline="A gaem of wrod recogintion"
       description="Is it a word, or not? Quick fire word recognition designed to twist your brain with twisted words."

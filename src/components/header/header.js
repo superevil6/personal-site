@@ -1,6 +1,24 @@
 import React, { Component } from 'react';
 import Helmet from 'react-helmet';
+import Navbar2 from '../nav-bar/navbar2.js';
+import MobileNav from '../mobile-nav/mobile-nav.js';
 import ApexSymbol from './Apex.png';
+import './header.css';
+
+const menuItems = [
+  {"title":"Home", "link" : "", "icon" : "home"},
+  {"title":"Who I Am", "link" : "history", "icon" : "user"},
+  {"title":"My Skills", "link" : "skills", "icon" : "laptop"},
+  {"title":"Games", "link" : "#" , "icon" : "gamepad",
+  subMenu : [
+    {"title" : "DoorSquare", "link" : "doorsquare"},
+    {"title" : "Aintaword", "link" : "aintaword"},
+    {"title" : "Dichotiball", "link" : "dichotiball"}
+  ]
+},
+  {"title":"Work History", "link" : "work" , "icon" : "history"},
+  {"title":"Contact Me", "link" : "contact" , "icon" : "phone"}
+];
 
 class Header extends Component {
 
@@ -12,7 +30,9 @@ class Header extends Component {
   }
   render() {
     return (
-        <div>
+        <div className="header" style={this.props.background && {"backgroundImage" : `url(${this.props.background})`}}>
+            <Navbar2 navItems={menuItems}/>
+            <MobileNav navItems={menuItems} />
             <Helmet>
                 <title>{this.props.title}</title>
                 <meta name="description" content={this.props.description} />
@@ -24,7 +44,7 @@ class Header extends Component {
                 }
                 
             </Helmet>
-            <h1>{this.props.title}</h1>
+            <h1 style={{"paddingTop" : "80px", "color" : this.props.titleColor, "backgroundRepeat" : this.props.backgroundRepeat, "backgroundSize" : this.props.bSize}}>{this.props.title}</h1>
         </div>
     );
   }

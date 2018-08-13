@@ -3,11 +3,12 @@ import SubNav from '../../components/sub-nav/sub-nav.js';
 import List from '../../components/list/list.js';
 import Header from '../../components/header/header.js';
 import './history.css';
+import historyBackground from './bay.jpg';
 import courthouse from './images/courthouse.jpg';
 import campus from './images/campus.jpg';
 import sunset from './images/sunset.jpg';
 import tajiri from './images/tajiri.jpg';
-import pencil from './images/pencil.jpg';
+import smile from './images/smile.jpg';
 
 
 
@@ -23,14 +24,19 @@ class History extends Component {
  
   render() {
     return (
-        <div id="history" className="container text-center">
-        <Header title="The History of my life." description="Check out these various interesting historical events centered around me. Also view my hobbies and be amazed by my lofty goals." />
+        <div id="history" className="text-center">
+        <Header 
+        title="The History of my life"
+        titleColor="red" 
+        description="Check out these various interesting historical events centered around me. Also view my hobbies and be amazed by my lofty goals."
+        background= {historyBackground}
+        />
           <List width={90} list={
             {
               items: [
                 {"title" : "Who I am",
-                "image" : pencil,
-                "description" : "I am a 28 year old software developer who lives in Kansas. I used to live in Japan for five years, and plan on getting married to a beautiful woman soon. I love playing, and making video games. I always challenge myself to learn new hobbies/skills, and luckily programming/web development has no shortage of things to learn."}
+                "image" : smile,
+                "description" : "I am a 28 year old software developer who lives in Kansas. I used to live in Japan for five years. I recently got married, and want to have kids soon. I love playing, and making video games. I always challenge myself to learn new hobbies/skills, and luckily programming/web development has no shortage of things to learn."}
 
             ]}
           }
@@ -51,7 +57,7 @@ class History extends Component {
                   {"title" : "Living Abroad", 
                   "image" : tajiri, 
                   "imageDescription" : "I taught at a school named Tajiri Elementary school. This was the view off the balcony of my classroom.",
-                  "description" : "I had a great time in Japan, so when I returned to America to finish up college, I decided to apply for an English teaching job, and was hired. I spent the next four years living in Japan. Eventually I moved in with my fiance, and taught myself C# so I could program indie games."},
+                  "description" : "I had a great time in Japan, so when I returned to America to finish up college, I decided to apply for an English teaching job, and was hired. I spent the next four years living in Japan and taught Englisha at over seven schools, including Kindergarten, Elementary Schools, and Junior Highscools. Eventually I moved in with my fiance, and taught myself C# so I could program indie games."},
                   {"title" : "Returning to the US", 
                   "image" : sunset,
                   "imageDescription" : "A sunset I captured upon returning to America. It's taken at my parent's house. America has the best sunsets.", 
@@ -62,7 +68,7 @@ class History extends Component {
               <h2 id="hobbies">Hobbies</h2>
               <List width={ "30" } list={
                 {items : [
-                {"title" : "Guitar", "description" : "I'm a huge fan of metal, so I love sweep picking, double picking, and anything that stounds awesome. I could stand to practice more.", "icon" : "fa fa-music"},
+                {"title" : "Guitar", "description" : "I'm a huge fan of metal, so I love sweep picking, double picking, and anything that sounds awesome. I could stand to practice more.", "icon" : "fa fa-music"},
                 {"title" : "Video Games", "description" : "It's been my primary hobby since for as long as I can remember. I've played and beaten more games than I could possibly count.", "icon" : "fa fa-gamepad"},
                 {"title" : "Art", "description" : "I absolutely love drawing, and animation as well. I used to make Flash cartoons.", "icon" : "fa fa-paint-brush"},
                 {"title" : "Movies", "description" : "I watch as many films as I can. I love great movies, and I love terrible movies. That being said, I'm not too big a fan of modern movies, they seem too cash grabby.", "icon" : "fa fa-film"},

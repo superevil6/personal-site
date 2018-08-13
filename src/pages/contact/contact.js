@@ -2,42 +2,49 @@ import React, { Component } from 'react';
 import List from '../../components/list/list.js';
 import Header from '../../components/header/header.js';
 import SiteModal from '../../components/modal/modal.js';
-import { Form, Text, Radio, RadioGroup, TextArea, Checkbox } from 'react-form';
+import ZapierForm from 'react-zapier-form';
+import contactBackground from './park.jpg';
 import './contact.css';
 
 const ContactForm = () => (
-  <Form render={({
-    submitForm
-  }) => (
-    <div className="form">
-      <form onSubmit={submitForm}>
-        <div className="form_group">
-          <label className="form_item">First Name:
-            <Text field="firstName" placeholder='First Name' />
-          </label>
-          <label className="form_item">Last Name:
-            <Text field="lastName" placeholder='Last Name' /> 
-          </label>
+
+<ZapierForm action='https://hooks.zapier.com/hooks/catch/3642109/gqpvyh/'>
+   {({ error, loading, success }) => {
+      return (
+      <div className="form">
+        <div name="contactForm">
+          <div className="form_group">
+            <label className="form_item">First Name:
+              <input type="text" name="firstName" placeholder='First Name' />
+            </label>
+            <label className="form_item">Last Name:
+              <input type="text" name="lastName" placeholder='Last Name' /> 
+            </label>
+          </div>
+          <div className="form_group">
+            <label className="form_item">Phone Number:
+              <input type="text" name="phoneNumber" placeholder="Phone Number to reach you by." />
+            </label>
+            <label className="form_item">Email:
+              <input type="email" name="email" placeholder="Email to reach you by." />
+            </label>
+          </div>
+          <div className="form_group">
+            <label className="form_item">Reason for contact:
+              <input type="textarea" name="reason" placeholder="Why are you interested in contacting me?" />
+            </label>
+          </div>
+          <div className="form_group">
+              <button className="submit_button" type="submit">Submit</button>
+          </div>            
         </div>
-        <div className="form_group">
-          <label className="form_item">Phone Number:
-            <Text field="phoneNumber" placeholder="Phone Number to reach you by." />
-          </label>
-          <label className="form_item">Email:
-            <Text field="email" placeholder="Email to reach you by." />
-          </label>
-        </div>
-        <div className="form_group">
-          <label className="form_item">Reason for contact:
-            <TextArea field="reason" placeholder="Why are you interested in contacting me?" />
-          </label>
-        </div>
-        <div className="form_group">
-            <button className="submit_button" type="submit">Submit</button>
-        </div>            
-      </form>
-    </div>
-  )} />
+        {loading && <div>Loading...</div>}
+        {error && <div>Something went wrong. Please try again later.</div>}
+        {success && <div>Thank you for contacting me!</div>}
+      </div>
+      )
+   }}
+</ZapierForm>
 )
 
 class Contact extends Component {
@@ -52,25 +59,26 @@ class Contact extends Component {
   render() {
     return (
         <div className="text-center">
-            <Header title="Contact Me" description="Here are various ways to get in touch with me." />
+            <Header 
+            title="Contact Me" 
+            description="Here are various ways to get in touch with me." 
+            background={contactBackground}
+            />
             <SiteModal buttonText="Contact me" title="Contact me" form={ContactForm()} />
             {/* <List width={ "20" } list={
                 {items : [
-                {"title" : "Telephone", "title" : "Telephone", "link" : "tel:+1-(913)-480-6401", "hyperlink" : "+1-(913)-480-6401", "icon" : "fa fa-phone"},
-                {"title" : "Email", "link" : "mailto:apex.xp@gmail.com", "hyperlink" : "apex.xp@gmail.com", "icon" : "fa fa-envelope"},
+
             ]}
               } /> */}
               <h2>Check out these links:</h2>
-              <List width={ "20" } list={
+              <List width={ "40" } list={
                 {items : [
-                {"title" : "Github", "link" : "https://www.github.com/superevil6", "hyperlink" : "Github/superevil6", "description" : "Check out my projects", "icon" : "fab fa-github"},
-                {"title" : "Steam", "description" : "Play games with me!", "link" : "https://steamcommunity.com/id/superevil6", "hyperlink" : "superevil6", "icon" : "fab fa-steam"},
-                {"title" : "Linked In", "description" : "It's a new account, have mercy.", "link" : "www.linkedin.com/in/alex-cassells", "hyperlink" : "Link with me", "icon" : "fab fa-linkedin"},
+                {"title" : "Telephone", "description" : "Please fill out a contact form and I'll call you!", "title" : "Telephone", "icon" : "fa fa-phone"},
+                {"title" : "Github", "link" : "https://www.github.com/superevil6", "description" : "Check out my projects", "icon" : "fab fa-github"},
+                {"title" : "Linked In", "description" : "It's a new account, have mercy.", "link" : "https://www.linkedin.com/in/alex-cassells", "icon" : "fab fa-linkedin"},
                 {"title" : "Appstore", "description" : "There's only one game on there. I need to renew the dev subscription.", "icon" : "fab fa-app-store-ios"},
-                {"title" : "Google Play", "description" : "Yep, only DoorSquare. I hope to change that soon.", "link" : "https://play.google.com/store/apps/developer?id=Alex+Cassells", "hyperlink" : "Alex Cassells", "icon" : "fab fa-google-play"},
-
-
-
+                {"title" : "Google Play", "description" : "Yep, only DoorSquare. I hope to change that soon.", "link" : "https://play.google.com/store/apps/developer?id=Alex+Cassells", "icon" : "fab fa-google-play"},
+                {"title" : "Steam", "description" : "Play games with me!", "link" : "https://steamcommunity.com/id/superevil6", "icon" : "fab fa-steam"},
             ]}
               } />
         </div>

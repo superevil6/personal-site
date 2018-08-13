@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
+import Header from '../../components/header/header.js';
 import Workcard from './work-card.js';
 import './work.css';
+import workBackground from './castle.jpg';
+
 
 class Work extends Component {
   constructor(props) {
@@ -10,8 +13,12 @@ class Work extends Component {
  
   render() {
     return (
-        <div className="container text-center">
-          <h1>Work History</h1>
+        <div className="text-center">
+          <Header 
+            title="Work History" 
+            description="These are the places I've worked, and some of the things I've done. Wow!" 
+            background={workBackground}
+          />
           <Workcard 
           title="BuilderDesigns" 
           date="July 2017 - Current" 
