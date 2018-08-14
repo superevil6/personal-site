@@ -15,7 +15,7 @@ const ContactForm = () => (
         <div name="contactForm">
           <div className="form_group">
             <label className="form_item">First Name:
-              <input type="text" name="firstName" placeholder='First Name' />
+              <input type="text" name="firstName" placeholder='First Name' required={true} />
             </label>
             <label className="form_item">Last Name:
               <input type="text" name="lastName" placeholder='Last Name' />
@@ -26,12 +26,12 @@ const ContactForm = () => (
               <input type="text" name="phoneNumber" placeholder="Phone Number to reach you by." />
             </label>
             <label className="form_item">Email:
-              <input type="email" name="email" placeholder="Email to reach you by." />
+              <input type="email" name="email" placeholder="Email to reach you by." required={true} />
             </label>
           </div>
           <div className="form_group">
             <label className="form_item">Reason for contact:
-              <input type="textarea" name="reason" placeholder="Why are you interested in contacting me?" />
+              <textarea name="reason" placeholder="Why are you interested in contacting me?" required={true} />
             </label>
           </div>
           <div className="form_group">

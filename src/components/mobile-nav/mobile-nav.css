@@ -1,8 +1,9 @@
 .nav{
     display: flex;
     position: fixed;
-    width: 45%;
+    width: 50%;
     background-color: black;
+    z-index: 10;
 }
 .nav_button{
     display: block;
@@ -47,7 +48,7 @@
 .subnav_hidden{
     display: none;
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 700px) {
     .nav{
         display: none;
     }
