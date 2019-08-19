@@ -32,12 +32,12 @@ class History extends Component {
         description="Check out these various interesting historical events centered around me. Also view my hobbies and be amazed by my lofty goals."
         background= {historyBackground}
         />
-          <List width={90} list={
+          <List width={10} list={
             {
               items: [
                 {"title" : "Who I am",
                 "image" : smile,
-                "description" : "I am a 28 year old software developer who lives in Kansas. I used to live in Japan for five years. I recently got married, and want to have kids soon. I love playing, and making video games. I always challenge myself to learn new hobbies/skills, and luckily programming/web development has no shortage of things to learn."}
+                "description" : "I am a software developer who lives in Kansas. I used to live in Japan for five years. I recently got married, and want to have kids soon. I love playing, and making video games. I always challenge myself to learn new hobbies/skills, and luckily programming/web development has no shortage of things to learn."}
 
             ]}
           }
@@ -69,9 +69,9 @@ class History extends Component {
               <h2 id="hobbies">Hobbies</h2>
               <List size="list_item_sm" list={
                 {items : [
-                {"title" : "Guitar", "description" : "I'm a huge fan of metal, so I love sweep picking, double picking, and anything that sounds awesome. I could stand to practice more.", "icon" : "fa fa-music"},
+                {"title" : "Music", "description" : "First off, I'm awful. I've been steadily practicing and trying to improve since I started five years ago. I mostly play the guitar with a bit of piano on the side. Metal is my favorite genre, but boy is that hard to play.", "icon" : "fa fa-music"},
                 {"title" : "Video Games", "description" : "It's been my primary hobby since for as long as I can remember. I've played and beaten more games than I could possibly count.", "icon" : "fa fa-gamepad"},
-                {"title" : "Art", "description" : "I absolutely love drawing, and animation as well. I used to make Flash cartoons.", "icon" : "fa fa-paint-brush"},
+                {"title" : "Art", "description" : "I love drawing. I'm working on a webcomic series right now, but it's not ready for the light of day yet.", "icon" : "fa fa-paint-brush"},
                 {"title" : "Movies", "description" : "I watch as many films as I can. I love great movies, and I love terrible movies. That being said, I'm not too big a fan of modern movies, they seem too cash grabby.", "icon" : "fa fa-film"},
                 {"title" : "Programming", "description" : "I like doing it, which is good because it's my job.", "icon" : "fa fa-code"},
                 {"title" : "Studying", "description" : "No, really. I love learning new things. Right now this mostly involves studying Programing and Japanese.", "icon" : "fa fa-book"},
@@ -81,7 +81,7 @@ class History extends Component {
               <h2 id="goals">Goals</h2>
               <List size="list_item_sm" list={
                   {items : [
-                  {"title" : "Have a family!", "description" : "That sounds fun!"},
+                  {"title" : "Start a family!", "description" : "My wife and I want kids!!"},
                   {"title" : "Learn how to create AI.", "description" : "It's not that I want to make SkyNet, I just feel a little compelled."},
                   {"title" : "Make More Games", "description" : "I've got a bunch of ideas, and given the time I think I can make some really good stuff."},
 

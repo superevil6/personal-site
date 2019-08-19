@@ -31,6 +31,14 @@ class Skills extends Component {
                   {"summary" : "Tons of experimentation and random development"}, 
                   {"summary" : "Personally, it's my favorite."},
                   ]} } />
+                  <Skill skillName=".Net" width="80%" summaryItems={ 
+                {items : [
+                  {"summary" : "As previoulsy mentioned, I understand and thrive with Object Oriented Programming and C#, so .Net is a breeze."},
+                  {"summary" : "I know how to manipulate IIS, stand up sites, and work with app/web configs."},
+                  {"summary" : "Although I perfer *Nix terminals, I can work my way around Cmd and Powershell no problem."},
+                  {"summary" : "I have experience utilizing TFS for version controlling and task management."},
+                  {"summary" : "While I haven't built anything entirely on Azure due to the cost, I have built a lot of Webfunctions. It's easy and handy."},
+                  ]} } />
                   <Skill skillName="Javascript/Node" width="70%" summaryItems={ 
                 {items : [
                   {"summary" : "I have development experience with ES6 and everything prior."},
@@ -38,19 +46,31 @@ class Skills extends Component {
                   {"summary" : "This website uses Node, and NPM. I love going through NPMjs and seeing all the crazy modules you can integrate into your projects."},
                   {"summary" : "One of my immediate personal projects is to develop a Node Package for distribution through npmjs.com"},
                   {"summary" : "I can set up and use Express.js. ...CRUD, this site doesn't utilize it."},
+                  {"summary" : "I've used more jQuery than I'd like to admit."},
                   ]} } />
               <Skill skillName="PHP" width="70%" summaryItems={ 
                 {items : [
-                  {"summary" : "While working at BuilderDesigns I've done a lot of PHP coding and debugging"}, 
+                  {"summary" : "I wrote a lot of backend logic for Angular 1.x sites using PHP."}, 
                   {"summary" : "I've built APIs for SQL databases to be used in PHP as well as AngularJS."},
                   {"summary" : "Writting lots of back-end logic and tons of debugging."},
-                  {"summary" : "At BuilderDesigns, I've worked with a lot of oldersites that don't utilize JavaScript frameworks. With enough ingenuity you can replicate anything a fancy framework can do in PHP."},
+                  {"summary" : "I've worked on much older sites that use PHP as a make-shift front end framework to surprisingly good success."},
                   ]} } />
-              <Skill skillName="SQL" width="65%" summaryItems={ 
+              <Skill skillName="Python" width="20%" summaryItems={ 
                 {items : [
-                  {"summary" : "Experience with creating databases, tables, rows, and properities."},
-                  {"summary" : "I can write queries, yay!"},  
-                  {"summary" : "Worked a lot of tables into APIs for use on sites at BuilderDesigns."}
+                  {"summary" : "This is more of a hobby language for me. I've experimented with Machine Learning, and have learned Phython to that extent. Look for the GitHub project when it's ready to be shared."},
+                  {"summary" : "I understand the syntax well, and have written small applications like cashregisters with Python. I like it, but I wouldn't consider myself an expert at all."},
+                  {"summary" : "I'm a Raspberry Pi enthusiast! I hope to actually mix the two together soon. I'm also eyeballing an Arduino project or two."},
+                  ]} } />
+              <Skill skillName="SQL" width="80%" summaryItems={ 
+                {items : [
+                  {"summary" : "Experience with creating databases, tables, rows, and columns."},
+                  {"summary" : "tSQL and MySQL are mainly what I've worked with. I look forward to using Postgres, I hear good things."},  
+                  {"summary" : "I have worked with Express, .Net WebAPI, and PHP to create SQL based APIs for frontends."}
+                  ]} } />
+              <Skill skillName="MongoDB" width="40%" summaryItems={ 
+                {items : [
+                  {"summary" : "I can install, and utilize MongoDB."},
+                  {"summary" : "I can search, modify, add, and edit documents pretty handily."},
                   ]} } />
               <Skill skillName="HTML/CSS/JS" width="85%" summaryItems={ 
                 {items : [
@@ -72,9 +92,8 @@ class Skills extends Component {
               <Skill skillName="ReactJS" width="70%" summaryItems={ 
                 {items : [
                   {"summary" : "Well, this site is made in ReactJS for one."}, 
-                  {"summary" : "Although I made most of the components used on this site, there are a few pre-made ones such as react-router-dom, react-helmet, and that neat little Shadowbox used in the games section."}, 
-                  {"summary" : "I've taken several courses online including CodeAcademy.com's"}, 
-                  {"summary" : "BuilderDesigns uses it."}]} } />
+                  {"summary" : "Although I made most of the components used on this site, there are a few pre-made ones such as react-router-dom, react-helmet, and that neat little shadowbox used in the games section."}, 
+                  {"summary" : "I have made many sites and projects utilizing ReactJS, as of now, it's my go too."}]} } />
               <Skill skillName="*nix administration" width="75%" summaryItems={ 
                 {items : [
                   {"summary" : "Most of my work at BuilderDesigns involves System Administrative work for Centos, Debian, and Ubuntu servers."},
@@ -85,15 +104,10 @@ class Skills extends Component {
                   {"summary" : "VIM has a nasty learning curve, but I've grown to like it."},
                   {"summary" : "Seriously though, I do a lot of SysAdmin work at Builderdesigns."}
                   ]} } />
-              <Skill skillName="MongoDB" width="40%" summaryItems={ 
-                {items : [
-                  {"summary" : "I can install, and utilize MongoDB."},
-                  {"summary" : "I can search, modify, add, and edit documents pretty handily."},
-                  ]} } />
               <Skill skillName="Graphic Design" width="60%" summaryItems={ 
                 {items : [
                   {"summary" : "I do my own graphics for game development. I'd love to share some of the graphics."},
-                  {"summary" : "Needless to say, I know how to use Photoshop (to a lesser extent GIMP), Illustrator, and Animate (formly known as Flash.). A ton of sprite editing programs too."},
+                  {"summary" : "Needless to say, I know how to use Photoshop (to a lesser extent GIMP), Illustrator, Krita, and Animate (formly known as Flash.). A ton of sprite editing programs too."},
                   {"summary" : "I used to do a lot of flash animation in highscool. I'll try to dig some up if you're interested."}
                   ]} } />
               <Skill skillName="Web Development / Misc" width="80%" summaryItems={ 
@@ -101,6 +115,8 @@ class Skills extends Component {
                   {"summary" : "Digital Ocean: I know most of what there is to know about creating, managing, destorying, and manipulating droplets through Digital Ocean."},
                   {"summary" : "Docker: I can set up Docker containers, and make good use of them too."},
                   {"summary" : "Wordpress: I can set up and manage Wordpress blogs."},
+                  {"summary" : "C++: I can read and write C++, but I don't have as much experience with it as I do the languages above. I'd love to do more with it."},
+                  {"summary" : "Java: Same thing as C++."},
                   {"summary" : "Stackoverflow: This isn't really a skill, but I know how to search through Stackoverflow efficiently to find what I need."}
                   ]} } />
               <Skill skillName="Japanese" width="80%" summaryItems={ 

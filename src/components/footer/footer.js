@@ -12,7 +12,7 @@ class Footer extends Component {
   render() {
     return (
         <div className="footer text-center">
-            <span>Copyright 2018 - Alex Cassells</span>
+            <span>Copyright {new Date().getFullYear()} - Alex Cassells</span>
         </div>
     );
   }
