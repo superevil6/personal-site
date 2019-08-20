@@ -12,7 +12,8 @@ const ContactForm = () => (
    {({ error, loading, success }) => {
       return (
       <div className="form">
-        <div name="contactForm">
+        {!success &&
+          <div name="contactForm">
           <div className="form_group">
             <label className="form_item">First Name:
               <input type="text" name="firstName" placeholder='First Name' required={true} />
@@ -38,6 +39,8 @@ const ContactForm = () => (
               <button className="submit_button" type="submit">Submit</button>
           </div>
         </div>
+        }
+      
         {loading && <div>Loading...</div>}
         {error && <div>Something went wrong. Please try again later.</div>}
         {success && <div>Thank you for contacting me!</div>}

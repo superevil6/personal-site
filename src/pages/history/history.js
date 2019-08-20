@@ -37,7 +37,7 @@ class History extends Component {
               items: [
                 {"title" : "Who I am",
                 "image" : smile,
-                "description" : "I am a 28 year old software developer who lives in Kansas. I used to live in Japan for five years. I recently got married, and want to have kids soon. I love playing, and making video games. I always challenge myself to learn new hobbies/skills, and luckily programming/web development has no shortage of things to learn."}
+                "description" : "I am a software developer who lives in Kansas. I used to live in Japan for five years. I recently got married, and want to have kids soon. I love playing, and making video games. I always challenge myself to learn new hobbies/skills, and luckily programming/web development has no shortage of things to learn."}
 
             ]}
           }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Blog from '../../components/blog/blog.js';
 import Header from '../../components/header/header.js';
+import AgeFinder from '../../components/ageFinder';
 import blackboard from '../../components/blog/images/blackboard.jpg';
 import ImageGallery from 'react-image-gallery';
 import homepageBackground from './sunflowers.jpg';
@@ -13,6 +14,7 @@ import satansred from '../../components/blog/images/satansred.jpg';
 import threeliter from '../../components/blog/images/threeliter.jpg';
 import haku from '../../components/blog/images/haku.jpg';
 import rings from '../../components/blog/images/rings.jpg';
+import flowers from '../../components/blog/images/Flowers.jpg';
 
 //Carousel images
 import uncomfortableSteve from './Uncomfortable Steve from accounting.png';
@@ -41,21 +43,6 @@ class Home extends Component {
   
 
   render() {
-    const year = (new Date()).getFullYear();
-    const birthDay = 262;
-    const getAge = () => {
-      let now = new Date();
-      let start = new Date(now.getFullYear(), 0, 0);
-      let difference = now - start;
-      let oneDay = 1000 * 60 * 60 * 24;
-      let day = Math.floor(difference / oneDay);
-      if(day > birthDay){
-        return year - 1989;
-      }
-      else{
-        return year - 1989 - 1;
-      }
-    }
 
 
 
@@ -108,7 +95,7 @@ class Home extends Component {
             <div className="intro_mobile">
               <h2>About Myself</h2>
               <div className="intro">
-                <p>My name is Alex Cassells, I'm a {getAge()} year old programmer. I love videogames, art, movies, drawing, and many other things. I like making stuff! I like making videogames the most though. Check out this website to learn more about me, and feel free to send me a message from the contact page.</p>
+                <p>My name is Alex Cassells, I'm a {AgeFinder()} year old programmer. I love videogames, art, movies, drawing, and many other things. I like making stuff! I like making videogames the most though. Check out this website to learn more about me, and feel free to send me a message from the contact page.</p>
               </div>
             </div>
             <div className="gallery_link">
@@ -118,7 +105,7 @@ class Home extends Component {
             <div>
               <h2>About Myself</h2>
               <div className="intro">
-                <p>My name is Alex Cassells, I'm a {getAge()} year old programmer. I love videogames, art, movies, drawing, and many other things. I like making stuff! I like making videogames the most though. Check out this website to learn more about me, and feel free to send me a message from the contact page.</p>
+                <p>My name is Alex Cassells, I'm a {AgeFinder()} year old programmer. I love videogames, art, movies, drawing, and many other things. I like making stuff! I like making videogames the most though. Check out this website to learn more about me, and feel free to send me a message from the contact page.</p>
               </div>
             </div>
               <div className="fixed_container">
@@ -128,6 +115,11 @@ class Home extends Component {
             </div>
             <div className="right_container">
               <h2>Updates and News</h2>
+              <Blog title="First year anniversary!" 
+              date="August 19th 2019" 
+              imageDescription="Lovely flowers that my wife crocheted for me!"
+              photo={flowers} 
+              content="Hard to believe that I've been married for over a year now! Just as hard to believe that I've been programming professionally for two and a half years now! Wow! Onward and upward! I've been working on my project called Color Splash lately, and I hope that I can eventually get it out the door, and on to Steam. I'll create a new page for it soon, once I've got some good screenshots to share. Check it out on Github" />
               <Blog title="Happy 4th, happy wedding!" 
               date="July 4th 2018" 
               imageDescription="Her engagement ring, and the ring I received from my grandparents."
