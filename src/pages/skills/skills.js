@@ -125,6 +125,11 @@ class Skills extends Component {
                   {"summary" : "I lived in Japan for five years, and adapted very well. I insisted on studying everyday and relished any chance to converse with people."},
                   {"summary" : "I really enjoy reading and writing. I feel a certain mysticism in the Kanji (the written characters originating from China.)."}, 
                   ]} } />
+              <Skill skillName="Agile/Scrum" width="90%" summaryItems={ 
+                {items : [
+                  {"summary" : "I have worked in an AGILE environment on multiple teams, including a traditional Scrum team and a Kanban lane."},
+                  {"summary" : "I have participated in approximately 131,424,678 meetings, including but not limited to: Retrospectives, Sprint Groomings, and Sprint Reviews"}
+                  ]} } />
             </div>
           </div>
         </div>

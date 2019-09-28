@@ -15,6 +15,7 @@ import threeliter from '../../components/blog/images/threeliter.jpg';
 import haku from '../../components/blog/images/haku.jpg';
 import rings from '../../components/blog/images/rings.jpg';
 import flowers from '../../components/blog/images/Flowers.jpg';
+import beachhouse from '../../components/blog/images/beachhouse.JPG';
 
 //Carousel images
 import uncomfortableSteve from './Uncomfortable Steve from accounting.png';
@@ -115,6 +116,11 @@ class Home extends Component {
             </div>
             <div className="right_container">
               <h2>Updates and News</h2>
+              <Blog title="Trucking Along" 
+              date="September 28th 2019" 
+              imageDescription="This beach/cool house was about 5 minutes walking distance from my appartment in Hitachi."
+              photo={beachhouse} 
+              content="Been working on Colorful Splash, and my website. Things have been going well, and I'm excited to give more updates out soon on its progress." />
               <Blog title="First year anniversary!" 
               date="August 19th 2019" 
               imageDescription="Lovely flowers that my wife crocheted for me!"

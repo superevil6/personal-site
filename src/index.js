@@ -16,6 +16,7 @@ import Skills from './pages/skills/skills.js';
 import Aintaword from './pages/games/aintaword.js';
 import Dichotiball from './pages/games/dichotiball.js';
 import Doorsquare from './pages/games/doorsquare.js';
+import ColorfulSplash from './pages/games/colorfulSplash';
 import Work from './pages/work/work.js';
 import Contact from './pages/contact/contact.js';
 
@@ -36,6 +37,7 @@ ReactDOM.render(
             <Route path="/aintaword" component={Aintaword} />
             <Route path="/dichotiball" component={Dichotiball} />
             <Route path="/doorsquare" component={Doorsquare} />
+            <Route path="/colorfulSplash" component={ColorfulSplash} />
             <Route path="/work" component={Work} />
             <Route path="/contact" component={Contact} />
             {/* <Redirect to="/" /> */}

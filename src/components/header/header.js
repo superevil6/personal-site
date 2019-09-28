@@ -13,7 +13,8 @@ const menuItems = [
   subMenu : [
     {"title" : "DoorSquare", "link" : "doorsquare"},
     {"title" : "Aintaword", "link" : "aintaword"},
-    {"title" : "Dichotiball", "link" : "dichotiball"}
+    {"title" : "Dichotiball", "link" : "dichotiball"},
+    {"title" : "Colorful Splash", "link" : "colorfulSplash"}
   ]
 },
   {"title":"Work History", "link" : "work" , "icon" : "history"},
