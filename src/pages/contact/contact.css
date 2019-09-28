@@ -1,0 +1,6 @@
+.ReactModal__Overlay{
+    background-color: rgba(0, 0, 0, 0.75) !important;
+} 
+.ReactModal__Overlay--after-open{
+    background-color: rgba(0, 0, 0, 0.75) !important;
+}

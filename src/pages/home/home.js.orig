@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 import Blog from '../../components/blog/blog.js';
 import Header from '../../components/header/header.js';
+<<<<<<< HEAD
+import AgeFinder from '../../components/ageFinder'
+=======
 import AgeFinder from '../../components/ageFinder';
+>>>>>>> a9f7bab97113ba6d68221ed3b3b087f56d3c8e94
 import blackboard from '../../components/blog/images/blackboard.jpg';
 import ImageGallery from 'react-image-gallery';
 import homepageBackground from './sunflowers.jpg';
