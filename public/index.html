@@ -51,18 +51,16 @@
   <script>
     converse.initialize({
         bosh_service_url: 'https://conference.alexcassells.com:5281/http-bind/', // Please use this connection manager only for testing purposes,
-        //debug: ,
-        //auto_login: true,
-        //http_bind: true,
-        //prebind: true,
         registration_domain: 'alexcassells.com',
         default_domain: 'alexcassells.com',
         domain_placeholder: 'alexcassells.com',
+        allow_non_roster_messaging: 'true',
+        locked_muc_nickname: 'true',
+        auto_join_rooms: [{'jid': 'chat@conference.alexcassells.com', 'minimized': false }],
         muc_domain: 'conference.alexcassells.com',
         locked_muc_domain: 'true',
-        //authentication: 'anonymous',
         allow_muc: true,
-        //show_controlbox_by_default: true
+        show_controlbox_by_default: true
     });
 </script>
 </html>
