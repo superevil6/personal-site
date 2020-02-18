@@ -68,11 +68,6 @@ class Contact extends Component {
             background={contactBackground}
             />
             <SiteModal buttonText="Contact me" title="Contact me" form={ContactForm()} />
-            {/* <List width={ "20" } list={
-                {items : [
-
-            ]}
-              } /> */}
               <h2>Check out these links:</h2>
               <List size={ "list_item_sm" } list={
                 {items : [

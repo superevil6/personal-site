@@ -8,6 +8,7 @@
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
     -->
+    <script src="https://cdn.conversejs.org/6.0.0/dist/converse.min.js" charset="utf-8"></script>
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -15,7 +16,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="https://cdn.conversejs.org/6.0.0/dist/converse.min.css"></link>
-    <script src="https://cdn.conversejs.org/6.0.0/dist/converse.min.js" charset="utf-8"></script>
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -27,7 +27,7 @@
     -->
     <title>Alex Cassells</title>
   </head>
-  <body style="background-color: #333333">
+  <body style="background-color: #333333;">
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
@@ -43,11 +43,16 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+  <style>
+    .modal-backdrop{
+      position: unset !important;
+    }
+  </style>
   <script>
     converse.initialize({
-        bosh_service_url: 'https://conference.alexcassells.com:5281/http-bind', // Please use this connection manager only for testing purposes,
-        //debug: true,
-        //auto_login: false,
+        bosh_service_url: 'https://conference.alexcassells.com:5281/http-bind/', // Please use this connection manager only for testing purposes,
+        //debug: ,
+        //auto_login: true,
         //http_bind: true,
         //prebind: true,
         //jid: 'alex@alexcassells.com',

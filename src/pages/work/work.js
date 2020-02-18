@@ -25,9 +25,14 @@ class Work extends Component {
             background={workBackground}
           />
           <div className="text-center container">
+          <Workcard 
+            title="Indie GameDev" 
+            date="December 2016 - Current" 
+            image= {Unity}
+            description="I taught myself how to program in Javascript and C#, and began developing games in Unity utilizing C#. I love gaming, I love drawing, and I love writing, so it's only natural I would make my own stuff. Please check out the game menu above for a few examples of my work." />
             <Workcard 
             title="Abbott - eScreen" 
-            date="September 2018 - Current" 
+            date="September 2018 - November 2019" 
             image= {Abbott} 
             description="Abbott is a healthcare research and development company that produces health releated equipment and materials. EScreen is a subdivision of Abbott that specializes in drug testing hardware and software. I work as a software developer, using .NET frameworks." />
             <Workcard 
@@ -35,11 +40,6 @@ class Work extends Component {
             date="July 2017 - September 2018" 
             image= {BuilderDesigns}
             description="I got hired on the Support department due to my self-taught programming skills, and began debugging a plethora of unfamiliar programming languages and front-end Javascript frameworks, including AngularJS 1.x, React, Node.JS, PHP, and the basics (HTML, CSS, and Vanilla JS.). I also do various Linux based server side administrative tasks, such as SSL certification and site migrations." />
-            <Workcard 
-            title="Indie GameDev" 
-            date="January 2017 - Ongoing" 
-            image= {Unity}
-            description="I taught myself how to program in Javascript and C#, and began developing games in Unity utilizing C#. I love gaming, I love drawing, and I love writing, so it's only natural I would make my own stuff. Please check out the game menu above for a few examples of my work." />
             <Workcard 
             title="Interac" 
             date="January 2014 - March 2017" 
