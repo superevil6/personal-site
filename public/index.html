@@ -8,14 +8,15 @@
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
     -->
-    <script src="https://cdn.conversejs.org/6.0.0/dist/converse.min.js" charset="utf-8"></script>
+    <!-- <script src="https://cdn.conversejs.org/6.0.0/dist/converse.min.js" charset="utf-8"></script> -->
+    <link rel="stylesheet" href="%PUBLIC_URL%/converse.min.css"></link>
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" media="screen" href="https://cdn.conversejs.org/6.0.0/dist/converse.min.css"></link>
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="https://cdn.conversejs.org/6.0.0/dist/converse.min.css"></link> -->
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -48,8 +49,10 @@
       position: unset !important;
     }
   </style>
+  <script type="text/javascript" src="%PUBLIC_URL%/converse.js"></script>
   <script>
     converse.initialize({
+        theme: 'apex',
         bosh_service_url: 'https://conference.alexcassells.com:5281/http-bind/', // Please use this connection manager only for testing purposes,
         registration_domain: 'alexcassells.com',
         default_domain: 'alexcassells.com',
@@ -60,7 +63,8 @@
         muc_domain: 'conference.alexcassells.com',
         locked_muc_domain: 'true',
         allow_muc: true,
-        show_controlbox_by_default: true
+        show_controlbox_by_default: true,
+        assets_path: '%PUBLIC_URL%/converse.js/dist/'
     });
 </script>
 </html>

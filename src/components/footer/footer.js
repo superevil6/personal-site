@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+// import Converse from '../converse/converse-component';
 import './footer.css';
 
 class Footer extends Component {
@@ -13,6 +14,7 @@ class Footer extends Component {
     return (
         <div className="footer text-center">
             <span>Copyright {new Date().getFullYear()} - Alex Cassells</span>
+            {/* <Converse /> */}
         </div>
     );
   }
