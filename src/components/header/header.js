@@ -45,7 +45,13 @@ class Header extends Component {
                 }
 
             </Helmet>
-            <h1 style={{"paddingTop" : "80px", "textShadow" : "1px 2px 2px black", "backgroundRepeat" : this.props.backgroundRepeat, "backgroundSize" : this.props.bSize}}>{this.props.title}</h1>
+            <h1 
+              style={{"paddingTop" : "80px", 
+              "textShadow" : "1px 2px 2px black", 
+              "backgroundRepeat" : this.props.backgroundRepeat, 
+              "backgroundSize" : this.props.bSize}}>
+              {this.props.title}
+            </h1>
         </div>
     );
   }

@@ -16,6 +16,7 @@ import haku from '../../components/blog/images/haku.jpg';
 import rings from '../../components/blog/images/rings.jpg';
 import flowers from '../../components/blog/images/Flowers.jpg';
 import beachhouse from '../../components/blog/images/beachhouse.JPG';
+import temple from '../../components/blog/images/temple.jpeg';
 
 //Carousel images
 import uncomfortableSteve from './Uncomfortable Steve from accounting.png';
@@ -108,6 +109,7 @@ class Home extends Component {
               <div className="intro">
                 <p>My name is Alex Cassells, I'm a {AgeFinder()} year old programmer. I love videogames, art, movies, drawing, and many other things. I like making stuff! I like making videogames the most though. Check out this website to learn more about me, and feel free to send me a message from the contact page.</p>
               </div>
+
             </div>
               <div className="fixed_container">
                 <h2>Gallery</h2>
@@ -116,6 +118,11 @@ class Home extends Component {
             </div>
             <div className="right_container">
               <h2>Updates and News</h2>
+              <Blog title="Chat!" 
+              date="March 11th 2020" 
+              imageDescription="A really awesome temple in Hyogo that I visited with my father-in-law."
+              photo={temple} 
+              content="I've built a small XMPP chat application that can be accessed in the footer of each page. Click the chat button in the menu or scroll on down! I'm also working on a new game as well, it's called Rogueloot for now, and I hope to add a page with some sweet screenshots soon." />
               <Blog title="Trucking Along" 
               date="September 28th 2019" 
               imageDescription="This beach/cool house was about 5 minutes walking distance from my appartment in Hitachi."

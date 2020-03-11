@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { animateScroll } from 'react-scroll';
 import { Link } from 'react-router-dom';
 import './mobile-nav.css';
 
@@ -46,6 +47,10 @@ class MobileNav extends Component {
                     </li>
                 </Link>
                 )}
+                  <li className='navbar_item' onClick={ ()=> {animateScroll.scrollToBottom({containerID : 'chatbox'})}}>
+                      <i className="fa fa-comment"></i>
+                    <span>Chat</span>
+                  </li>
                 </ul>
             </div>
         </div>
