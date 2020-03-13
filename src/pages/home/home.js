@@ -70,6 +70,10 @@ class Home extends Component {
         description: "An expanding background for Dichotiball."
       },
       {
+        original: cosmos,
+        description: "Just a lovely pixel-art flower."
+      },
+      {
         original: rainbowTiles,
         description: "A rainbowy background used in DoorSquare."
       },
