@@ -18,7 +18,7 @@ const getBlogPosts = (request, response) =>{
     })
 }
 const getSkills = (request, response) =>{
-    pool.query('select array_to_json(array(select row_to_json(n)from skillset ssleft join lateral (select ss.skill_name, array(select skill_summary from skill where skillset_id = ss.skillset_id) as skills) n on true))', (error, results) =>{
+    pool.query('select array_to_json(array(select row_to_json(n)from skillset ss left join lateral (select ss.skill_name, array(select skill_summary from skill where skillset_id = ss.skillset_id) as skills) n on true))', (error, results) =>{
         if(error){
             throw error;
         }
