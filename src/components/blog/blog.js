@@ -16,6 +16,7 @@ class Blog extends Component {
     }).then(data => {
       let blogPosts = data.map((blogPost, index) => {
         return(
+          <div className="blog_post text-center">
             <div key={index} className="content">
               <h2>{blogPost.title}</h2>
               <h5>{blogPost.date}</h5>
@@ -24,6 +25,7 @@ class Blog extends Component {
               <span className="image_description">{blogPost.image_description}</span>
               <p className="blog_content">{blogPost.content}</p>
             </div>
+          </div>
           )
       })
       this.setState({blogPosts : blogPosts});
@@ -31,7 +33,7 @@ class Blog extends Component {
   }
   render() {
     return (
-        <div className="blog_post text-center">
+        <div>
           {this.state.blogPosts}
         </div>
     );
