@@ -34,7 +34,7 @@ class Blog extends Component {
                 </div>
               </div>
               )}
-            )})
+            )}
         </div>
     );
   }
