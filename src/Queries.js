@@ -22,7 +22,7 @@ const getSkills = (request, response) =>{
         if(error){
             throw error;
         }
-        response.stats(200).json(results.rows);
+        response.status(200).json(results.rows);
         console.log(response);
     })
 }
