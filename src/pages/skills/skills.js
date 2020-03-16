@@ -53,7 +53,13 @@ class Skill extends Component{
     });    
   }
   toggleShow = (index) =>{
-    this.setState( { viewMore : index, skills : this.state.skills } );
+    if(index === this.state.viewMore){
+      this.setState( {viewMore : null} )
+    }
+    else{
+      this.setState( { viewMore : index} );
+
+    }
   }
 
 render(){

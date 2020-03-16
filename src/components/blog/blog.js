@@ -14,27 +14,29 @@ class Blog extends Component {
     .then(results => {
       return results.json();
     }).then(data => {
-      let blogPosts = data.map((blogPost, index) => {
-        return(
-          <div className="blog_post text-center">
-            <div key={index} className="content">
-              <h2>{blogPost.title}</h2>
-              <h5>{blogPost.date}</h5>
-              <img src={require(`${blogPost.photo}`)} />
-              <br />
-              <span className="image_description">{blogPost.image_description}</span>
-              <p className="blog_content">{blogPost.content}</p>
-            </div>
-          </div>
-          )
-      })
-      this.setState({blogPosts : blogPosts});
+      console.log(data);
+      this.setState({blogPosts : data});
+      console.log(this.state.blogPosts);
     });    
   }
   render() {
     return (
         <div>
-          {this.state.blogPosts}
+          {this.state.blogPosts &&
+           this.state.blogPosts.map((blogPost, index) => {
+             return(
+              <div className="blog_post text-center">
+                <div key={index} className="content">
+                  <h2>{blogPost.title}</h2>
+                  <h5>{blogPost.date}</h5>
+                  <img src={require(`${blogPost.photo}`)} />
+                  <br />
+                  <span className="image_description">{blogPost.image_description}</span>
+                  <p className="blog_content">{blogPost.content}</p>
+                </div>
+              </div>
+              )}
+            )})
         </div>
     );
   }
