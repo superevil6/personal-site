@@ -10,7 +10,7 @@ class Blog extends Component {
     }
   }
   componentDidMount(){
-    fetch('https://alexcassells.com:8081/api/blogPosts')
+    fetch('https://alexcassells.com/api/blogPosts')
     .then(results => {
       return results.json();
     }).then(data => {
