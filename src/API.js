@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const db = require('./Queries');
 
 const app = express();
-const port = 3002
+const port = 3000;
 
 app.use(bodyParser.json());
 app.use(
@@ -12,8 +12,8 @@ app.use(
     })
 )
 
-app.listen(port, () => {
-    console.log(`App running on port ${port}`);
+app.listen(port, ()=>{
+console.log('listening')
 });
 
-app.get('/blogPosts', db.getBlogPosts);
+app.get('/api/blogPosts', db.getBlogPosts);
