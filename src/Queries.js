@@ -17,7 +17,17 @@ const getBlogPosts = (request, response) =>{
         response.status(200).json(results.rows);
     })
 }
+const getSkills = (request, response) =>{
+    pool.query('SELECT * FROM skill JOIN skillset ON (skill_set = skillset_id)', (error, results) =>{
+        if(error){
+            throw error;
+        }
+        response.stats(200).json(results.rows);
+        console.log(response);
+    })
+}
 
 module.exports = {
-    getBlogPosts
+    getBlogPosts,
+    getSkills
 }

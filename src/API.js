@@ -17,3 +17,4 @@ console.log('listening')
 });
 
 app.get('/api/blogPosts', db.getBlogPosts);
+app.get('/api/skills', db.getSkills);
