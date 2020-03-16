@@ -14,9 +14,7 @@ class Blog extends Component {
     .then(results => {
       return results.json();
     }).then(data => {
-      console.log(data);
       this.setState({blogPosts : data});
-      console.log(this.state.blogPosts);
     });    
   }
   render() {
