@@ -27,9 +27,13 @@ class Blog extends Component {
                 <div key={index} className="content">
                   <h2>{blogPost.title}</h2>
                   <h5>{blogPost.date}</h5>
-                  <img src={require(`${blogPost.photo}`)} />
+                  { blogPost.photo &&
+                    <img src={require(`${blogPost.photo}`)} />
+                    }
                   <br />
-                  <span className="image_description">{blogPost.image_description}</span>
+                  {blogPost.image_description && 
+                    <span className="image_description">{blogPost.image_description}</span>
+                    }
                   <p className="blog_content">{blogPost.content}</p>
                 </div>
               </div>
