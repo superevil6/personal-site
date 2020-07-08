@@ -8,6 +8,7 @@ import BuilderDesigns from './builder_designs.png';
 import Interac from './interac.png';
 import KU from './KU.png';
 import Unity from './unity.jpg';
+import Whizzimo from './whizzimo.png';
 
 
 class Work extends Component {
@@ -25,6 +26,11 @@ class Work extends Component {
             background={workBackground}
           />
           <div className="text-center container">
+          <Workcard 
+            title="Whizzimo" 
+            date="February 2020 - Current" 
+            image={Whizzimo}
+            description="Whizzimo is an educational tool designed to help children learn how to read. It has an extensive database of words and about a million ways they can be broken down and qualified. The application uses numerous activities to teach concepts like phonetics and word structure. It's written in Angular, Node, Mongo, and Express." />
           <Workcard 
             title="Indie GameDev" 
             date="December 2016 - Current" 
