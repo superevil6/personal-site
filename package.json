@@ -9,7 +9,7 @@
     "jade": "^1.11.0",
     "mongodb": "^3.5.5",
     "mongoose": "^5.9.4",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.7",
     "node-strophe": "^2.0.0",
     "pg": "^7.18.2",
     "react": "^16.13.0",
